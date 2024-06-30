@@ -1,0 +1,45 @@
+###### USE CODEPEN to Demo this
+https://codepen.io/ - Have a account with matta.sundar88@gmail.com and also have a github account with same email.
+
+###### Lorem Ipsum - https://www.lipsum.com/
+
+###### Talk about HTML is for structure - refer to news paper headings - plain content will not make much sense, CSS for styling to keep users engaged otherwise websites would all be boring and JS to handle all the interactivity i.e. button clicks etc
+
+###### HTML
+<h1>Hello World!</h1>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non arcu tincidunt, tristique ante eu, scelerisque magna. Vestibulum tincidunt metus eget nisi pharetra, in commodo sem dapibus. Proin sed quam id nisl auctor condimentum. Aliquam suscipit, massa posuere efficitur finibus, purus quam accumsan leo, ac fringilla ante leo nec turpis. Nulla mollis sit amet elit sit amet vehicula. Aenean non pharetra risus. Phasellus fringilla lorem sapien, blandit porta mauris placerat non. Nunc feugiat non sapien sit amet sodales. Aliquam erat volutpat.</p>
+<h1></h1>
+<button id="loginButton">Log In</button>
+
+###### CSS
+body {
+  background: orange;
+/*   text-align: center; */
+}
+
+button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  font-size: 20px;
+  border: 2px solid red;
+  border-radius: 8px;
+}
+
+button:hover {
+  background-color: teal;
+  color: black;
+  cursor: pointer;
+}
+
+###### JS
+
+let loginBtn = document.getElementById("loginButton");
+
+loginBtn.addEventListener(
+  "click",
+  function () {
+    alert("Login Button was clicked!");
+  },
+  false
+);

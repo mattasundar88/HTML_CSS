@@ -1,0 +1,35 @@
+Let’s start somewhere we’ve all been before: Type “www.github.com” into your browser’s address bar and see the page load.
+
+###### Client: An application, such as Chrome or Firefox, that runs on a computer and is connected to the internet. Its primary role is to take user interactions and translate them into REQUESTS to another computer called a web server.
+
+###### Server: A machine that is connected to the internet and also has an IP address. A server waits for requests from other machines (e.g. a client) and RESPONDS to them. 
+
+###### IP address: Internet Protocol Address. A numerical identifier for a device (computer, server, printer, router, etc.) on a TCP/IP network. Every computer on the internet has an IP address that it uses to identify and communicate with other computers.
+
+###### URL: Uniform Resource Locators. URLs identify a particular web resource. A simple example is https://github.com/someone. The URL specifies the protocol (“https”), host name (github.com) and file name (someone’s profile page).
+
+###### The journey from code to webpage
+1. You type a URL into your browser - "www.github.com"
+2. The browser parses the information contained in the URL. This includes the protocol (“https”), the domain name (“github.com”) and the resource (“/”). In this case, there isn’t anything after the “.com” to indicate a specific resource, so the browser knows to retrieve just the main (index) page.
+3. When your browser gets a request from you to go to www.github.com, it doesn’t know where to look for www.github.com.
+4. The browser communicates with your ISP to do a DNS lookup of the IP address for the web server that hosts www.github.com. DNS - Domain Name System. A distributed database which keeps track of computer’s domain names and their corresponding IP addresses on the Internet.
+5. Once the ISP receives the IP address of the destination server, it sends it to your web browser.
+6. Your browser takes the IP address and the given port number from the URL (the HTTP protocol defaults to port 80 and HTTPS defaults to port 443) and opens a TCP socket connection. At this point, your web browser and web server are finally connected.
+7. Your web browser sends an HTTP request to the web server for the main HTML web page of www.github.com.
+8. The web server receives the request and looks for that HTML page. If the page exists, the web server prepares the response and sends it back to your browser. If the server cannot find the requested page, it will send an HTTP 404 error message, which stands for “Page Not Found”.
+9.Your web browser takes the HTML page it receives and then parses through it doing a full head to toe scan looking for other assets that are listed, such as images, CSS files, JavaScript files, etc.
+10. Once the browser has finished loading all other assets that were listed in the HTML page, the page will finally be loaded in the browser window and the connection will be closed.
+
+###### HOW BROWSERS WORK - https://web.dev/articles/howbrowserswork
+
+###### One thing worth noting is how information gets transmitted when you make a request for information. The answer is TCP/IP.
+
+These are the two protocols are frequently used together and rely on each other for data to have a destination and safely reach it.
+
+###### The TCP/IP model covers many internet protocols, which define how data is addressed and sent over the internet. Common internet protocols include HTTP, FTP, and SMTP, and all three are often used in conjunction with the TCP/IP model.
+
+HTTP (Hypertext Transfer Protocol) governs the workings of web browsers and websites.
+
+FTP (File Transfer Protocol) defines how files are sent over a network.
+
+SMTP (Simple Mail Transfer Protocol) is used to send and receive email.
