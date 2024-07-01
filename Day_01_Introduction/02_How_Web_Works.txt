@@ -28,6 +28,12 @@ These are the two protocols are frequently used together and rely on each other 
 
 ###### The TCP/IP model covers many internet protocols, which define how data is addressed and sent over the internet. Common internet protocols include HTTP, FTP, and SMTP, and all three are often used in conjunction with the TCP/IP model.
 
+IP is a protocol for a single packet's end to end communication. It's sort of like the mail system -- You address your letter (packet) properly, and you send it to the other end. There is no guarantee about it being received.
+
+TCP works a layer above IP. It is one of two protocols commonly used at that level, and it is used for ensuring that packets are transmitted end to end successfully, and that anything which requires multiple packets are all delivered, and the recipient knows the order to read them in. Think of it as a really fancy tracking system.
+
+TCP will take a series of messages, and reassemble them in the correct order, requesting missing parts, and filling in the gaps, so that the other side knows that the data is has is complete and isn't missing any pieces.
+
 HTTP (Hypertext Transfer Protocol) governs the workings of web browsers and websites.
 FTP (File Transfer Protocol) defines how files are sent over a network.
 SMTP (Simple Mail Transfer Protocol) is used to send and receive email.
