@@ -39,3 +39,5 @@ Yours sincerely,
 Dr Eleanor Gaye
 
 University of Awesome motto: "Be awesome to each other."
+
+###### USE JS FIDDLE or CODEPEN
