@@ -29,7 +29,5 @@ These are the two protocols are frequently used together and rely on each other 
 ###### The TCP/IP model covers many internet protocols, which define how data is addressed and sent over the internet. Common internet protocols include HTTP, FTP, and SMTP, and all three are often used in conjunction with the TCP/IP model.
 
 HTTP (Hypertext Transfer Protocol) governs the workings of web browsers and websites.
-
 FTP (File Transfer Protocol) defines how files are sent over a network.
-
 SMTP (Simple Mail Transfer Protocol) is used to send and receive email.
