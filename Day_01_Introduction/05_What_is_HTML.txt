@@ -1,0 +1,41 @@
+HTML stands for Hyper Text Markup Language
+HTML is the standard markup language for creating Web pages
+HTML describes the structure of a Web page
+
+create a document demo.html
+Use a plain paragraph to simply show the text
+
+The Times of Indian
+
+Politics
+
+India
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu blandit magna. Suspendisse fringilla leo eget vehicula placerat. Duis in dignissim justo, eget rhoncus velit. Aenean ut euismod nulla, vitae pellentesque metus. Fusce cursus dapibus dapibus. In orci tortor, mattis eget metus et, elementum molestie elit. Morbi et dui congue, ullamcorper augue id, pharetra purus. Praesent vulputate condimentum urna nec lobortis. Integer vitae leo feugiat, vulputate sem tincidunt, eleifend libero. Aliquam erat volutpat. Praesent rutrum sodales nisi at mollis. Nam gravida pulvinar ante nec rhoncus. Aenean posuere cursus est. Donec eu sapien tempus, placerat sem eu, mattis tellus. Cras eu ex eu ipsum bibendum mattis. Nullam quis eros aliquet, scelerisque mi eu, sodales erat.
+
+Global
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu blandit magna. Suspendisse fringilla leo eget vehicula placerat. Duis in dignissim justo, eget rhoncus velit. Aenean ut euismod nulla, vitae pellentesque metus. Fusce cursus dapibus dapibus. In orci tortor, mattis eget metus et, elementum molestie elit. Morbi et dui congue, ullamcorper augue id, pharetra purus. Praesent vulputate condimentum urna nec lobortis. Integer vitae leo feugiat, vulputate sem tincidunt, eleifend libero. Aliquam erat volutpat. Praesent rutrum sodales nisi at mollis. Nam gravida pulvinar ante nec rhoncus. Aenean posuere cursus est. Donec eu sapien tempus, placerat sem eu, mattis tellus. Cras eu ex eu ipsum bibendum mattis. Nullam quis eros aliquet, scelerisque mi eu, sodales erat.
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu blandit magna. Suspendisse fringilla leo eget vehicula placerat. Duis in dignissim justo, eget rhoncus velit. Aenean ut euismod nulla, vitae pellentesque metus. Fusce cursus dapibus dapibus. In orci tortor, mattis eget metus et, elementum molestie elit. Morbi et dui congue, ullamcorper augue id, pharetra purus. Praesent vulputate condimentum urna nec lobortis. Integer vitae leo feugiat, vulputate sem tincidunt, eleifend libero. Aliquam erat volutpat. Praesent rutrum sodales nisi at mollis. Nam gravida pulvinar ante nec rhoncus. Aenean posuere cursus est. Donec eu sapien tempus, placerat sem eu, mattis tellus. Cras eu ex eu ipsum bibendum mattis. Nullam quis eros aliquet, scelerisque mi eu, sodales erat.
+
+Sports
+
+Cricket
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu blandit magna. Suspendisse fringilla leo eget vehicula placerat. Duis in dignissim justo, eget rhoncus velit. Aenean ut euismod nulla, vitae pellentesque metus. Fusce cursus dapibus dapibus. In orci tortor, mattis eget metus et, elementum molestie elit. Morbi et dui congue, ullamcorper augue id, pharetra purus. Praesent vulputate condimentum urna nec lobortis. Integer vitae leo feugiat, vulputate sem tincidunt, eleifend libero. Aliquam erat volutpat. Praesent rutrum sodales nisi at mollis. Nam gravida pulvinar ante nec rhoncus. Aenean posuere cursus est. Donec eu sapien tempus, placerat sem eu, mattis tellus. Cras eu ex eu ipsum bibendum mattis. Nullam quis eros aliquet, scelerisque mi eu, sodales erat.
+
+For more info visit the link: <a href="https://www.icc-cricket.com/tournaments/t20cricketworldcup/index"> T20 Cricket</a>
+
+Tennis
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu blandit magna. Suspendisse fringilla leo eget vehicula placerat. Duis in dignissim justo, eget rhoncus velit. Aenean ut euismod nulla, vitae pellentesque metus. Fusce cursus dapibus dapibus. In orci tortor, mattis eget metus et, elementum molestie elit. Morbi et dui congue, ullamcorper augue id, pharetra purus. Praesent vulputate condimentum urna nec lobortis. Integer vitae leo feugiat, vulputate sem tincidunt, eleifend libero. Aliquam erat volutpat. Praesent rutrum sodales nisi at mollis. Nam gravida pulvinar ante nec rhoncus. Aenean posuere cursus est. Donec eu sapien tempus, placerat sem eu, mattis tellus. Cras eu ex eu ipsum bibendum mattis. Nullam quis eros aliquet, scelerisque mi eu, sodales erat.
+
+Weather
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu blandit magna. Suspendisse fringilla leo eget vehicula placerat. Duis in dignissim justo, eget rhoncus velit. Aenean ut euismod nulla, vitae pellentesque metus. Fusce cursus dapibus dapibus. In orci tortor, mattis eget metus et, elementum molestie elit. Morbi et dui congue, ullamcorper augue id, pharetra purus. Praesent vulputate condimentum urna nec lobortis. Integer vitae leo feugiat, vulputate sem tincidunt, eleifend libero. Aliquam erat volutpat. Praesent rutrum sodales nisi at mollis. Nam gravida pulvinar ante nec rhoncus. Aenean posuere cursus est. Donec eu sapien tempus, placerat sem eu, mattis tellus. Cras eu ex eu ipsum bibendum mattis. Nullam quis eros aliquet, scelerisque mi eu, sodales erat.
+
+
+Explain about why this simple paragraph doesn't make sense - formatting makes sense - headings and paragraph - markup
+
+and explain about hypertext

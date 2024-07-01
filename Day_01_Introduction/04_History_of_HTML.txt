@@ -1,0 +1,42 @@
+###### The first version of HTML was published in 1993, but the actual work on building this markup language took several years in the late 1980s and early 1990s. HTML’s foundations were laid out in CERN, the European Organization for Nuclear Research. 
+
+The initial idea behind Hypertext Markup Language was to help CERN researchers organize scientific information. That’s why the earliest iterations of HTML were rudimentary and utilitarian. 
+
+---------------------- The first version of HTML ---------------------- 
+
+The history of HTML officially started in 1993 when Berners-Lee published the inaugural version of this markup language. This was the first attempt to organize the burgeoning expanse of information on the Internet. HTML 1.0 introduced a basic yet groundbreaking set of tags for structuring digital documents.
+
+---------------------- HTML 2.0 was a leap forward ---------------------- 
+
+###### The second version of HTML — released in 1995 — marked a significant leap forward in the evolution of the Hypertext Markup Language. The main goal of HTML 2.0 was to standardize the markup language as the Web rapidly expanded.
+
+That’s why the Internet Engineering Task Force formed a special HTML working group in 1994 to deal with the standardization of HTML.
+
+W3C - In the meantime, Tim Berners-Lee launched the World Wide Web Consortium (W3C) in 1994 with the idea of standardizing HTML protocols. The W3C had huge support from the Massachusetts Institute of Technology (MIT) and CERN.
+
+---------------------- HTML 3 (1997) ---------------------- 
+
+###### The W3C soon launched its first HTML version officially labeled 3.2. This one added new elements to the extending HTML features list to make the system even more powerful. For instance, HTML 3.2 improved the table tag and introduced the form tag for designing interactive web forms.
+
+---------------------- HTML 4 (1999) ---------------------- 
+###### The fourth iteration had a much more profound impact on web development than its predecessor. Apart from embracing CSS as a standard in web page creation, HTML 4 added a range of new features to enrich the code. 
+
+For instance, the alt tag made the system more accessible by helping persons with impaired vision understand the content of a web page through text descriptions. In addition, HTML 4 started supporting scripting languages (most notably JavaScript) to make web content even more dynamic.
+
+---------------------- HTML 5: The latest iteration ----------------------
+
+HTML 5 was officially introduced by the W3C in October 2014. This version of the markup language was a big step forward compared to all of its predecessors because it brought forth a host of new features to enrich the web experience:
+
+A strong focus on multimedia files
+Advanced semantic elements
+A simpler syntax 
+Responsive markup practices
+
+The last entry was particularly important for the growing number of users who accessed the Web through different types of devices. Though fairly old from the tech perspective, HTML 5 is still the most commonly used markup language among web developers. 
+
+---------------------- W3C vs. WHATWG ----------------------
+The W3C used to manage the evolution of web protocols, but the monopoly ended in 2004 when representatives from Mozilla, Opera, and Apple teamed up to establish the Web Hypertext Application Technology Working Group (WHATWG).
+
+The goal of this entity, which was distinct from W3C, was to enhance HTML development in a way that enabled the language to fulfill new demands arising from real-world authoring practices and browser behavior. Web Applications 1.0 and Web Forms 1.0, the initial documents of WHATWG, were combined to establish HTML5.
+
+Today, WHATWG maintains a ‘living’ HTML standard that is not classified using numbers. WHATWG’s work has also served as the basis for W3C to set up its own HTML5 Working Group. HTML5 formally received the status of a ‘Recommendation’ in October 2014.
