@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Tables</title>
+  <style>
+    html {
+      font-family: sans-serif;
+    }
+
+    table {
+      border-collapse: collapse;
+      border: 2px solid rgb(200,200,200);
+      letter-spacing: 1px;
+      font-size: 0.8rem;
+    }
+
+    td, th {
+      border: 1px solid rgb(190,190,190);
+      padding: 10px 20px;
+    }
+
+    td {
+      text-align: center;
+    }
+
+    caption {
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>A table is a structured set of data made up of rows and columns (tabular data).</h2>
+  <!-- <table>
+    <tr>
+      <td>Hi, I'm your first cell.</td>
+      <td>I'm your second cell.</td>
+      <td>I'm your third cell.</td>
+      <td>I'm your fourth cell.</td>
+    </tr>
+    <tr>
+      <td>Second row, first cell.</td>
+      <td>Cell 2.</td>
+      <td>Cell 3.</td>
+      <td>Cell 4.</td>
+    </tr>
+  </table> -->
+
+  <!-- SIMPLE TABLE -->
+  <table>
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th style="background-color: yellow">Email Address</th>
+    </tr>
+    <tr>
+      <td>Hillary</td>
+      <td>Nyakundi</td>
+      <td style="background-color: yellow">tables@mail.com</td>
+    </tr>
+    <tr>
+      <td>Lary</td>
+      <td>Mak</td>
+      <td style="background-color: yellow">developer@mail.com</td>
+    </tr>
+  </table>
+
+  <!-- To talk about colgroup - don't include at first style="background-color: yellow" -->
+  <br />
+  <table>
+    <colgroup>
+      <col />
+      <col />
+      <col style="background-color: yellow" />
+    </colgroup>
+    <!-- <colgroup>
+      <col style="background-color: yellow" span="3" />
+    </colgroup> -->
+    <tr>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email Address</th>
+    </tr>
+    <tr>
+      <td>Hillary</td>
+      <td>Nyakundi</td>
+      <td>tables@mail.com</td>
+    </tr>
+    <tr>
+      <td>Lary</td>
+      <td>Mak</td>
+      <td>developer@mail.com</td>
+    </tr>
+  </table>
+
+  <!-- ADVANCED TABLE -->
+  <table>
+    <caption>
+      Sales of Company A and Company B
+    </caption>
+
+    <thead>
+      <tr>
+        <th>Company Name</th>
+        <th colspan="2">October</th>
+        <th colspan="2">November</th>
+        <!-- colspan="2" -->
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td rowspan="2">Company A</td>
+        <td>Sales</td>
+        <td>Profit</td>
+        <td>Sales</td>
+        <td>Profit</td>
+      </tr>
+      <tr>
+        <td>$20,000</td>
+        <td>$5,000</td>
+        <td>$30,000</td>
+        <td>$7,000</td>
+      </tr>
+
+      <tr>
+        <td rowspan="2">CompanyB</td>
+        <td>Sales</td>
+        <td>Profit</td>
+        <td>Sales</td>
+        <td>Profit</td>
+      </tr>
+      <tr>
+        <td>$40,000</td>
+        <td>$15,000</td>
+        <td>$60,000</td>
+        <td>$23,000</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <th colspan= "5">Company B performed better than Company A was more productive</th>
+        <!-- colspan= "4" -->
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

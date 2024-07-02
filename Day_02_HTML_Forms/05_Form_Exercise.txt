@@ -1,0 +1,16 @@
+Heading: Registration Form
+#################################
+First Name (Input) - Required
+Last Name (Input) - Required
+Gender - Select only one - Male/Female/Don't want to specify - Required
+Age (Input)
+Address (Text area)
+Email - Required
+Phone no:
+Username - Required
+Password - Required
+Confirm Password - Required
+Select one on more games - Cricket, Tennis, Badminton, Volleyball - Required
+Locations - select only one (Hyderabad, Delhi, Mumbai, Chennai, Pune, Indore, Lucknow, Guwahati) - Required
+Need to tick the box - I agree to terms and conditions - Required
+Submit Button

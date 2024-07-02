@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Element</title>
+</head>
+<body>
+  <!-- All forms start with a <form> element -->
+  <h1>Form</h1>
+  <!-- All of its attributes are optional, but it's standard practice to always set at least the action and method attributes:
+  The action attribute defines the location (URL) where the form's collected data should be sent when it is submitted.
+  The method attribute defines which HTTP method to send the data with (usually get or post). -->
+  <form action="www.example.com" method="get">
+    <!-- <form action="www.google.com" method="get"> -->
+    
+    <!-- The for attribute of <label> must be equal to the id attribute of the related element to bind them together. Each id should be unique  -->
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="username" placeholder="Enter you name" />
+    
+    <!-- For a <form> element, the name attribute is used as a reference when the data is submitted. -->
+    <!-- Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the <label> element, it toggles the input (this increases the hit area).  -->
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="useremail" placeholder="Enter you email" />
+
+    <!-- The placeholder attribute specifies a short hint that describes the expected value of an input field - it goes away as we start to type -->
+
+    <!-- <label for="search">Search:</label>
+    <input type="text" id="pwd" name="search" /> -->
+    <p><button>Sign In</button></p>
+  </form>
+</body>
+</html>
