@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Semantic HTML</title>
+</head>
+<body>
+  <!-- Semantic HTML, also known as semantic markup, refers to the use of HTML tags that convey the meaning—or semantics—of the content contained within them. -->
+  <!-- A semantic element clearly describes its meaning to both the browser and the developer. -->
+
+  <!-- Accessibility --> 
+  <!-- The proper use of HTML semantic tags will allow the screen readers to understand your content better and will communicate your content more accurately. -->
+  <!-- SEO -->
+  <!-- Pages with correctly implemented semantic HTML have an advantage in SEO over those that don’t.  -->
+
+  <div id="header"></div>
+  <div class="section">
+    <div class="article">
+      <div class="figure">
+        <img>
+        <div class="figcaption"></div>
+      </div>
+    </div>
+  </div>
+  <div id="footer"></div>
+
+  <!-- Here’s a full list: -->
+
+  <!-- <header>: The header tag defines content that should be considered the introductory information of a page or section
+  <nav>: The navigation tag is used for navigation links. It can be nested within the <header> tag, but secondary navigation <nav> tags are also commonly used elsewhere on the page.
+  <main>: This tag contains the main content (also called the body) of a page. There should be only one tag per page.
+  <article>: The article tag defines content that could stand independently of the page or site it’s on. It does not necessarily mean a “blog post.” Think of it more as “an article of clothing”—a self-contained item that can be used in various contexts.
+  <section>: Using <section> is a way of grouping nearby content of a similar theme. A section tag differs from an article tag. It isn’t necessarily self-contained, but it forms part of something else. 
+  <aside>: An aside element defines content that’s less important. It’s often used for sidebars—areas that add complementary but nonessential information.
+  <footer>: You use <footer> at the bottom of a page. It usually includes contact information, copyright information, and some site navigation. -->
+
+  <header>
+    <h1>News</h1>
+  </header>
+  <main>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae magni quae, porro et laudantium dignissimos minima in soluta libero suscipit, fugit nihil? Adipisci eveniet unde molestiae facilis eius voluptate fuga? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nisi enim rerum commodi reiciendis quod obcaecati rem tempore delectus. Pariatur expedita nulla minima exercitationem magnam? Magnam optio provident ipsam quo dicta. Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur illum assumenda iusto expedita ab! Soluta vel debitis animi atque officiis dolorum exercitationem consequatur dolores temporibus, commodi ut, eius velit pariatur!</p>
+    <section>
+      <h2>Weather Report</h2>
+      <article>
+        <h3>Weather forecast for Hyderabad</h3>
+        <section>
+          <h4>03 March 2024</h4>
+          <p>Rain.</p>
+        </section>
+        <section>
+          <h4>04 March 2024</h4>
+          <p>Periods of rain.</p>
+        </section>
+        <section>
+          <h4>05 March 2024</h4>
+          <p>Heavy rain.</p>
+        </section>
+      </article>
+      <article>
+        <h3>Weather forecast for Mumbai</h3>
+        <section>
+          <h4>03 March 2024</h4>
+          <p>Rain.</p>
+        </section>
+        <section>
+          <h4>04 March 2024</h4>
+          <p>Periods of rain.</p>
+        </section>
+        <section>
+          <h4>05 March 2024</h4>
+          <p>Heavy rain.</p>
+        </section>
+      </article>
+      <aside>Extra information.</aside>
+    </section>
+    <section>
+      <h2>Business Report</h2>
+      <article>
+        <h3>NSE</h3>
+        <section>
+          <h4>Godrej</h4>
+          <p>312.20</p>
+        </section>
+        <section>
+          <h4>Amazon</h4>
+          <p>171.23</p>
+        </section>
+        <section>
+          <h4>Colgate</h4>
+          <p>234.67</p>
+        </section>
+      </article>
+      <article>
+        <h3>BSE</h3>
+        <section>
+          <h4>Godrej</h4>
+          <p>312.20</p>
+        </section>
+        <section>
+          <h4>Amazon</h4>
+          <p>171.23</p>
+        </section>
+        <section>
+          <h4>Colgate</h4>
+          <p>234.67</p>
+        </section>
+      </article>
+      <aside>Extra information.</aside>
+    </section>
+  </main>
+  <footer>Copyright 2024</footer>
+
+</body>
+</html>

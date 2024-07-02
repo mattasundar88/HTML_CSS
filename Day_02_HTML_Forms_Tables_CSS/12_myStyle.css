@@ -1,0 +1,35 @@
+p {
+  color: brown;
+  font-size: 20px;
+}
+
+h3 {
+  color: purple;
+  text-decoration: underline;
+}
+
+h2 {
+  background-color: aqua;
+}
+
+li {
+  list-style: square;
+}
+
+/* CSS Styling */
+/* The selector points to the HTML element you want to style. */
+/* The declaration block contains one or more declarations separated by semicolons. { } */
+/* Each declaration includes a CSS property name and a value, separated by a colon. */
+/* after colon, follow space and end with semicolon */
+
+h1 {
+  color: pink;
+  text-align: center;
+  font-size: 50px;
+}
+
+body {
+  border: 1px solid black;
+}
+
+/* so far we have seen element selectors */
