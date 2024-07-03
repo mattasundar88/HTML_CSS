@@ -24,8 +24,16 @@ li {
 
 h1 {
   color: pink;
+  background-color: olive;
+  /* background color extends all the way since h1 is block level element */
   text-align: center;
   font-size: 50px;
+}
+
+a {
+  /* CSS Comments */
+  /* for inline background color applies for the width of the text present */
+  background-color: lightgray;
 }
 
 body {

@@ -1,0 +1,20 @@
+/* In CSS, inheritance controls what happens when no value is specified for a property on an element.
+
+CSS properties can be categorized in two types:
+
+inherited properties, which by default are set to the computed value of the parent element
+non-inherited properties, which by default are set to initial value of the property */
+
+ul {
+  color: olive;
+  border: 1px solid red;
+}
+
+/* show on chrome dev tools that the color is inherited and we do not see border being inherited*/
+
+li {
+  /* Overriding inheritance, if we explicitly set the inheritance with inherit, we can also inherit the border */
+  border: inherit;
+  /* The initial CSS keyword applies the initial (or default) value of a property to an element - do not apply the inheritance */
+  /* color: initial; */
+}

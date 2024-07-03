@@ -1,0 +1,90 @@
+/* Named Colors */
+/* In addition to these 16 basic colors, about 150 other colors have a keyword associated to them */
+h1 {
+  color: pink;
+  background-color: olivedrab;
+}
+
+/* Eric Meyer is a prominent figure in the world of web design and CSS (Cascading Style Sheets). He has been fundamental in shaping modern CSS practices and in educating a generation of web developers about effective and standards-compliant web design. */
+
+/* https://meyerweb.com/eric/tools/css/reset/ */
+
+p {
+  /* Origin: The color was named in memory of Rebecca Meyer, the daughter of Eric Meyer (the CSS expert we just discussed).
+  Tragic background: Rebecca Meyer passed away on her 6th birthday in 2014 due to brain cancer.
+  Favorite color: Purple was Rebecca's favorite color.
+  Community support: After Rebecca's passing, the web design community rallied to honor her memory. */
+  /* #663399 */
+  color: rebeccapurple;
+}
+
+li {
+  background-color: aqua;
+}
+
+/* RGB Colors */
+/* Each value can be represented as a <number> between 0 and 255 - 256 possible values  */ 
+/* Total combinations: 256 x 256 x 256 = 16,777,216 around 16.7 Million Colors - 1 million is 10 lakhs */ 
+
+/* With named colors, our list will be finite and hard to remember names */
+
+/* Red Green Blue - Any color is a combination of RGB */
+
+/* Each parameter (red, green, and blue) defines the intensity of the color and can be an integer between 0 and 255 or a percentage value (from 0% to 100%). */
+/* For example, rgb(255, 0, 0) is displayed as red, because red is set to its highest value (255) and the others are set to 0.
+Comma required after each rr,gg,bb
+
+To display black, set all color parameters to 0, like this: rgb(0, 0, 0).
+
+To display white, set all color parameters to 255, like this: rgb(255, 255, 255). */
+
+
+h2 {
+  color: rgb(215, 10, 135);
+}
+
+/* HEX Value
+In CSS, a color can be specified using a hexadecimal value in the form: #rrggbb
+
+Where rr (red), gg (green) and bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+
+0 1 2 3 4 5 6 7 8 9 A B C D E F - Hexa Decimal System
+Total combinations: 16^6 = 16,777,216 - 6 places and ecach can have 16 characters from 0 - F
+More compact that rgb - So rgb(13, 175, 8) - #0daf08
+
+For example, #ff0000 is displayed as red, because red is set to its highest value (ff) and the others are set to the lowest value (00).
+To display black, set all values to 00, like this: #000000.
+To display white, set all values to ff, like this: #ffffff.   */
+
+h3 {
+  color: #ffef34;
+  background-color: #000;
+}
+
+/* For some specific colors - we can further condense the #hexa color code */
+/* So, if we have #ff00cc, it can be written like this: #f0c. */
+
+/* RGBA Colors
+RGBA color values are an extension of RGB color values with an alpha channel - which specifies the opacity of the object.
+
+An RGBA color is specified with the rgba() function, which has the following syntax:
+
+rgba(red, green, blue, alpha)
+
+The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque). */
+
+body {
+  background-color: orange;
+}
+
+/* h4 {
+  background-color: rgba(212,23,45,0.5);
+} */
+
+/* To change the opacity of a background only, use the background property with a color value that allows for an alpha channel.  */
+
+/* opacity applies to the element as a whole, including its contents, it is  <number> in the range 0.0 to 1.0, inclusive, or a <percentage> in the range 0% to 100%, */
+h4 {
+  background-color: red;
+  opacity: 0.5;
+}
