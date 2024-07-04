@@ -3,35 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Styling Text - Part 1</title>
-  <!-- Including Google Font -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
-  <!-- End -->
-
-  <!-- Dancing Script Google Font -->
-  <!-- We can also import and use in stylesheet -->
-  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet"> -->
-  <!-- End -->
-  <link rel="stylesheet" href="06_styling_text.css">
+  <title>Styling Text - Part 2</title>
+  <link rel="stylesheet" href="08_styling_text.css">
 </head>
 <body>
-  <!-- Topics covered in Part 1 -->
+  <!-- Topics covered in Part 2 -->
   <!-- 
-  1. Font family
-  2. Font weight, size and style
-  3. Text alignment
-  4. Letter Spacing, Word Spacing and Line Height
-  5. Adding custom fonts with Google fonts
+  1. Text Transform and Text Decoration
+  2. ID and Class Selectors
+  3. Styling Lists - list-style-type, list-style-position and list-style-image
+  4. Styling Links
+  5. The font shorthand property
   6. Text shadow -->
   <h1>Amadeus</h1>
   <div>
-    <a href="/drama">Drama</a>, <a href="/music">Music</a>,
-    <a href="/history">History</a>
+    <a class="tag" href="/drama">Drama</a>, <a class="tag" href="/music">Music</a>,
+    <a class="tag" href="/history">History</a>
   </div>
+  <a href="#">A simple link</a>
   <h2>Summary</h2>
   <p>
     <a href="https://en.wikipedia.org/wiki/Antonio_Salieri">Antonio Salieri</a>
@@ -57,19 +46,25 @@
     <li>Roy Dotrice <span>Leopold Mozart</span></li>
     <li>Simon Callow <span>Emanuel Schikaneder</span></li>
     <li>Christine Ebersole <span>Katerina Cavalieri</span></li>
-    <li>Jeffrey Jones <span>Emperor Joseph II</span>
-      <ul>
-        <li>Hello</li>
-        <li>World</li>
-      </ul>
-    </li>
-    
+    <li>Jeffrey Jones <span>Emperor Joseph II</span></li>
   </ul>
+  
+  <!-- The start attribute allows you to start the list counting from a number other than 1. -->
+  <!-- The reversed attribute will start the list counting down instead of up.  -->
+  <!-- Note: If there are more list items in a reversed list than the value of the start attribute, the count will continue to zero and then into negative values. -->
+  <ol start="4" reversed>
+    <li>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore aliquid aspernatur voluptatem? Ratione ea saepe eius repellendus odio, nostrum officiis quidem quae quis maxime ad labore! Perferendis eligendi assumenda rem?
+    </li>
+    <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi sed, incidunt nihil nemo unde cum vel? Ad ex fuga provident explicabo illum molestiae. Deleniti tempore deserunt, necessitatibus reprehenderit quae qui.</li>
+    <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi deleniti quos, aut unde, ea voluptatem esse dolorum quia, architecto soluta libero quibusdam veniam sunt nesciunt. Quos quod eaque vero in!</li>
+  </ol>
   <hr />
   <h2>User Reviews</h2>
   <div>
     <span>Featured Review</span>
-    <h3>A Genius Movie About A Genius</h3>
+    <!-- <h3 id="featured">A Genius Movie About A Genius</h3> -->
+    <h3 class="highlight">A Genius Movie About A Genius</h3>
     <h4>10/10</h4>
     <p>
       I thought that it would be impossible to make a movie like this one!
@@ -85,7 +80,7 @@
     </p>
   </div>
   <div>
-    <h3>True Gem For Music Fans</h3>
+    <h3 class="highlight">True Gem For Music Fans</h3>
     <h4>9.5/10</h4>
     <p>
       I'd like to point out a few facts before I review the movie. First of

@@ -1,0 +1,116 @@
+body {
+  background-color: antiquewhite;
+}
+
+/* The text-transform CSS property specifies how to capitalize an element's text. It can be used to make text appear in all-uppercase or all-lowercase, or with each word capitalized. */
+p {
+  /* text-transform: capitalize; */ 
+  /* capitalize converts the first letter of each word to uppercase.  */
+  text-transform: uppercase;
+  
+  /* The font CSS shorthand property sets all the different properties of an element's font.  */
+  /* If font is specified as a shorthand for several font-related properties, then:
+
+  it must include values for:
+  <font-size>
+  <font-family> 
+  Rest all are optional */
+
+  /* font-style, font-variant and font-weight must precede font-size */
+  /* line-height must immediately follow font-size, preceded by "/", like this: "16px/3" */
+  /* font-family must be the last value specified. */
+  
+  /* font: italic 20px sans-serif; */
+  font: 900 20px/2 sans-serif;
+}
+
+h3 {
+  text-transform: lowercase;
+}
+
+/* A type selector is sometimes referred to as a tag name selector or element selector because it selects an HTML tag/element in your document. */
+h1 {
+  /* The text-decoration shorthand CSS property sets the appearance of decorative lines on text. It is a shorthand for text-decoration-line, text-decoration-color, text-decoration-style, and the newer text-decoration-thickness property. */
+  /* text-decoration-line: line-through;
+  text-decoration-color: magenta;
+  text-decoration-style: wavy; */
+  /* text-decoration: dashed aqua underline 16px; */
+  text-decoration: 4px wavy red overline;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* The CSS ID selector matches an element based on the value of the element's id attribute. */
+/* more control over specific elements rather applying the style to all the tags */
+/* An ID can be used only once per page, and elements can only have a single id value applied to them. */
+#featured {
+  background-color: gold;
+}
+
+/* To overcome that ID's should be used only once per page - we have class selector */
+/* IDs are only used when one element on the page should have a particular style applied to it. However, a class can be used to identify more than one HTML element. */
+.highlight {
+  background-color: gold;
+}
+
+/* .tag {
+  text-decoration: none;
+  background-color: aqua;
+} */
+
+/* let's explore some list-specific properties.  */
+
+/* list-style-type: Sets the type of bullets to use for the list, for example, square or circle bullets for an unordered list, or numbers, letters, or roman numerals for an ordered list. */
+ul {
+  /* list-style-type: square; */
+  /* list-style-type: "$"; */
+  /* list-style-type: none; */
+  list-style-type: "\1F44D";
+}
+
+ol {
+  /* list-style-type: upper-alpha; */
+  /* list-style-type: lower-roman; */
+  /* list-style-position: inside; */
+  /* list-style-image: linear-gradient(to left bottom, red, blue); */
+}
+
+/* list-style-position: Sets whether the bullets, at the start of each item, appear inside or outside the lists. Default is outside*/
+
+/* list-style-image: Allows you to use a custom image for the bullet, rather than a simple square or circle. */
+
+/* Styling Links */
+/* Default links have the following properties:
+Links are underlined.
+Unvisited links are blue.
+Visited links are purple.
+Hovering a link makes the mouse pointer change to a little hand icon. 
+Active links are red. Try holding down the mouse button on the link as you click it.*/
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  color: olive;
+}
+
+a:link {
+
+}
+
+a:visited {
+  color: orangered;
+}
+
+a:focus {
+}
+
+a:hover {
+  background-color: lime;
+  /* We can also change the cursor property */
+  cursor: zoom-in;
+}
+
+a:active {
+}
