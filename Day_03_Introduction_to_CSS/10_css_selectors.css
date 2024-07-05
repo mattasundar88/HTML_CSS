@@ -1,0 +1,57 @@
+/* The CSS universal selector (*) matches elements of any type. */
+* {
+  /* color: brown; */
+  /* border: 1px dotted dodgerblue; */
+}
+
+/* Generally used for reset css */
+/* 
+body {
+  border: 2px dotted dodgerblue;
+} */
+
+/* Type Selectors
+The CSS type selector matches elements by node name. In other words, it selects all elements of the given type within a document. */
+p {
+  background-color: lightgreen;
+}
+
+/* We have seen ID and Class selectors */
+
+.tag {
+  color: gold;
+}
+
+#featured {
+  background-color: gold;
+}
+
+/* Attribute selectors */
+/* The CSS attribute selector matches elements based on the element having a given attribute explicitly set, with options for defining an attribute value or substring value match. */
+
+/* input {
+  background-color: magenta;
+} */
+
+input[type="number"] {
+  background-color: magenta;
+}
+
+/* Internal links, beginning with "#" */
+a[href^="/"] {
+  font-size: 2em;
+}
+
+a[href^="#"] {
+  background-color: lightcoral;
+}
+
+/* Links with "google" anywhere in the URL */
+a[href*="wiki"] {
+  background-color: silver;
+}
+
+/* Links that end in ".com" */
+a[href$="com"] {
+  color: red;
+}
