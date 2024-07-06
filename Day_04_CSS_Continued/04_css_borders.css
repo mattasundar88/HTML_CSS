@@ -1,0 +1,75 @@
+h1 {
+  /* border-width: 0.5rem; */
+  /* border-color: red; */
+  /* border-style: groove; */
+
+  /* border: 2px red dotted; */
+}
+
+/* Border Color */
+/* Each side can be set individually using border-top-color, border-right-color, border-bottom-color, and border-left-color */
+
+h1 {
+  border-width: 4px;
+  border-top-color: red;
+  border-right-color: cyan;
+  border-bottom-color: black;
+  border-left-color: gold;
+  border-style: solid;
+  padding: 8px;
+}
+
+/* Border Width */
+
+h1 {
+  /* border-top-width: 1rem; */
+  /* border-width: thin; */
+  /* border-width: medium; */
+  border-width: thick;
+}
+
+/* Border Style */
+
+h1 {
+  border-top-style: dashed;
+  border-bottom-style: dotted ;
+}
+
+/* The border shorthand CSS property sets an element's border. It sets the values of border-width, border-style, and border-color. */
+
+/* h1 {
+  border: 2px solid green;
+}
+
+h1 {
+  border: none;
+  border-bottom: 4px solid orangered;
+} */
+/* 
+The border property may be specified using one, two, or three of the values listed below.
+The order of the values does not matter. */
+
+/* Note: The border will be invisible if its style is not defined. This is because the style defaults to none. */
+h1 {
+  /* border: dashed; */
+  /* border: 4px dotted; */
+
+  /* border: green solid; */
+}
+
+.container {
+  border: 1px solid orangered;
+  height: 200px;
+  width: 600px;
+  /* padding: 1rem; */
+}
+
+.child {
+  border: 1px solid olivedrab;
+  /* height: 100px; */
+  /* width: 200px; */
+  /* The percantage is calculated based on its parent width */
+  height: 75%;
+  width: 50%;
+  /* margin: 1rem; */
+}
