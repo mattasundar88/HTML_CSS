@@ -18,12 +18,18 @@ p {
 
 /* We have seen ID and Class selectors */
 
-.tag {
+/* .tag {
   color: gold;
 }
 
 #featured {
   background-color: gold;
+} */
+
+/* Combining selectors */
+/* Applying the same property */
+.tag, #featured, .score {
+  background-color: aqua;
 }
 
 /* Attribute selectors */
@@ -54,4 +60,33 @@ a[href*="wiki"] {
 /* Links that end in ".com" */
 a[href$="com"] {
   color: red;
+}
+
+/* Descendant combinator
+The descendant combinator — typically represented by a single space (" ") character — combines two selectors such that elements matched by the second selector  */
+
+/* ul li {
+  background-color: deepskyblue;
+} */
+
+/* Even #toc li also works */
+
+/* If I use Id or Class selector, need to apply to every span */
+#cast li {
+  color: deepskyblue;
+}
+
+/* Child combinator
+The child combinator (>) is placed between two CSS selectors. It matches only those elements matched by the second selector that are the direct children of elements matched by the first. */
+
+ol > li {
+  border: 1px solid red;
+  /* color: red */
+}
+
+/* Compound selector
+A compound selector is a sequence of simple selectors that are not separated by a combinator. */
+
+h2.score {
+  font-style: italic;
 }
