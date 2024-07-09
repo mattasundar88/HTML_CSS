@@ -1,0 +1,71 @@
+.box {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  display: inline-block;
+  border: 4px solid saddlebrown;
+  background-color: lightgoldenrodyellow;
+  margin: 10px;
+}
+
+.special {
+  /* Negative margin - These are used to reduce the spacing between the elements and draw them closer together.  */
+  /* margin-left: -40px; */
+  /* margin-right: -40px; */
+
+  /* margin: -10px; */
+}
+
+.container {
+  border: 4px solid green;
+  background-color: lightgoldenrodyellow;
+  width: 800px;
+  height: 200px;
+}
+
+.container h3 {
+  text-align: center;
+  border: 2px solid blue;
+  width: 100px;
+  /* hard to calculate if width of container changes */
+  /* margin: 0 225px; */
+  /* only works for left and right */
+  margin: 0 auto;
+  /* margin: 100px auto; */
+}
+
+p {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.redbox, .bluebox {
+  height: 75px;
+  width: 75px;
+  /* margin: 20px 0; */
+  margin: 20px 0 50px 0;
+}
+
+.redbox {
+  background-color: orangered;
+  /* margin-top: 20px; */
+  /* margin-bottom: 40px; */
+}
+
+/* The top and bottom margins of two adjacent elements are collapsed into one margin whose thickness is equal to the larger of the two margin values.
+It does not happen for the horizontal margins.
+Also incase of negative -50px -100px : -100px wins */
+
+.bluebox {
+  background-color: skyblue;
+  /* margin-top: 10px; */
+  /* margin-bottom: 30px; */
+}
+
+.greenbox {
+  height: 75px;
+  background-color: green;
+  width: 50%;
+  min-width: 400px;
+  max-width: 700px;
+}

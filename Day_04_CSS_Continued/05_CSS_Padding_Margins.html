@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Padding and Margin</title>
+  <link rel="stylesheet" href="06_css_padding_margins.css">
+</head>
+<body>
+
+  <!-- Topics Covered -->
+  <!-- 1. Padding -->
+  <!-- 2. Margins -->
+  <!-- 3. Box Sizing: Content Box and Border Box -->
+  <!-- 4. Display -->
+  <!-- <h1>Padding Demo</h1> -->
+  <!-- <a id="link" href="#">Click Me</a> -->
+
+  <!-- Comment the padding code -->
+
+  <!-- Margins create extra space around an element, unlike padding, which creates extra space within an element. -->
+  <div>
+    <h1>Margins Demo</h1>
+    <!-- Headings have a default margin -->
+    <a id="second_link" href="#">Click Me</a>
+  </div>
+
+  <!-- The box-sizing CSS property sets how the total width and height of an element is calculated. -->
+  <!-- content-box gives you the default CSS box-sizing behavior. -->
+  <!-- border-box tells the browser to account for any border and padding in the values you specify for an element's width and height. 
+  and the content box will shrink to absorb that extra width. -->
+  <div class="regular-box">
+    Content Box
+  </div>
+
+  <div class="alternate-box">
+    Border Box
+  </div>
+
+
+  <!-- content-box
+  This is the initial and default value as specified by the CSS standard. The width and height properties include the content, but does not include the padding, border, or margin. For example, .box {width: 350px; border: 10px solid black;} renders a box that is 370px wide.
+
+  Here, the dimensions of the element are calculated as: width = width of the content, and height = height of the content. (Borders and padding are not included in the calculation.)
+
+  border-box
+  The width and height properties include the content, padding, and border, but do not include the margin. Note that padding and border will be inside of the box. For example, .box {width: 350px; border: 10px solid black;} renders a box that is 350px wide, with the area for content being 330px wide. The content box can't be negative and is floored to 0, making it impossible to use border-box to make the element disappear.
+
+  Here the dimensions of the element are calculated as: width = border + padding + width of the content, and height = border + padding + height of the content. -->
+</body>
+</html>

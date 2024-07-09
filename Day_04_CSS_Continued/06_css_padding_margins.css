@@ -1,0 +1,66 @@
+#link {
+  font-size: 2rem;
+  border: 1px solid orangered;
+  /* The padding CSS shorthand property sets the padding area on all four sides of an element at once. */
+  /* This property is a shorthand for the following CSS properties: */
+  /* padding-top */
+  /* padding-right */
+  /* padding-bottom */
+  /* padding-left */
+  /* padding-top: 4px;
+  padding-right: 16px;
+  padding-bottom: 4px;
+  padding-left: 16px; */
+
+  /* When four values are specified, the paddings apply to the top, right, bottom, and left in that order (clockwise). */
+  /* padding: 4px 16px 4px 16px; */
+  
+  /* When one value is specified, it applies the same padding to all four sides. */
+  /* padding: 16px; */
+
+  /* When two values are specified, the first padding applies to the top and bottom, the second to the left and right. */
+  /* padding: 16px 32px; */
+  /* padding: 0 16px; */
+
+  /* When three values are specified, the first padding applies to the top, the second to the right and left, the third to the bottom. */
+  padding: 16px 48px 16px;
+}
+
+#second_link {
+  border: 1px solid green;
+}
+
+h1 {
+  border: 1px solid salmon;
+  /* margin: 0; */
+  /* margin: 20px 40px; */
+  margin: 40px;
+}
+
+div {
+  /* margin: 0 auto; */
+  /* The margin: 0 auto; rule is powerful for centering block-level elements horizontally, but it requires a defined width context to work effectively. Without a specified width, the element will take up the full available width, making it appear as though margin: 0 auto; isn't working as expected. */
+  width: 50%;
+}
+
+
+.regular-box, .alternate-box {
+  width: 300px;
+  height: 200px;
+  padding: 20px 10px;
+  border: 4px solid deepskyblue;
+  background-color: antiquewhite;
+  margin: 20px 0;
+}
+
+.alternate-box {
+  box-sizing: border-box;
+}
+
+/* Total width = 300px + 10px + 10px + 4px + 4px = 328px */
+/* Total height = 200px + 20px + 20px + 4px + 4px = 248px*/
+
+/* Border box */
+
+/* Total width = 300px but content width is now reduced to 300px - 28px = 272px
+Total height = 200px but content height is now reduced to 200px - 48px = 152px */
