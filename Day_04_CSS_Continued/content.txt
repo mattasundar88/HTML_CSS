@@ -1,0 +1,61 @@
+Project 1 - Information
+--------------------------
+
+### Font: Cormorant 
+### Font-weight: Use 300
+### Background-Color: azure
+### Nav Links: Use font size - 1.25rem
+
+### Images & Text:
+--------------------------
+-- For the Images, they should have opacity of 0.8 and when hovered they used be full visible with opacity of 1.
+-- Use height of 300px for images
+
+"https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+
+Joshua Vase
+
+"https://images.unsplash.com/photo-1578749556568-bc2c40e68b61?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+
+Larkin Plates
+
+"https://images.unsplash.com/photo-1610701596007-11502861dcfa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+
+Fortessa Cloud
+
+"https://images.unsplash.com/photo-1576020799627-aeac74d58064?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2615&q=80"
+
+Astoria Collection
+
+"https://images.unsplash.com/photo-1525974160448-038dacadcc71?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2274&q=80"
+
+Lava Beach Stoneware
+
+"https://images.unsplash.com/photo-1610701596061-2ecf227e85b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+
+Sand Canyon Bowls
+
+"https://images.unsplash.com/photo-1490312278390-ab64016e0aa9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+
+Lennon Collection
+
+"https://images.unsplash.com/photo-1605883705077-8d3d3cebe78c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+
+Mendocino Dinnerware
+
+### About Text:
+--------------------------
+-- For the text use the max and min width property so as to maintain min width for the text.
+--  width: 40%;
+    min-width: 600px;
+    max-width: 800px;
+-- Use font-size - 1.5rem
+
+Designing, making, and selling goods of timeless design and uncompromising integrity made thoughtfully, honestly, and with pride to be enjoyed with similar intention.
+
+Lets work together!
+
+### Footer Text:
+--------------------------
+johndoe@jdceramics.com
+123-456-7890
