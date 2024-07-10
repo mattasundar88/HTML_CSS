@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors - Part 2</title>
+  <link rel="stylesheet" href="02_css_selectors_part_2.css">
+</head>
+<body>
+  <h1>CSS Combinators</h1>
+  <p>A CSS combinator is a type of selector in CSS which is used to specify the relationship between any two CSS selectors. This helps in uniquely identifying and selecting only those elements within a document that satisfy the specified relationship. A CSS combinator follows the following syntax:</p>
+  <p>selector(combinator)selector 
+    <br>
+    {
+    <br>
+      &nbsp;&nbsp;styles;
+    <br>
+    }
+  </p>
+  <hr>
+  <h2>Descendent selector (space)</h2>
+  <p>The descendent selector in CSS is used to select all descendants of an element within a webpage, i.e., It selects all elements that are nested inside a specified element, be it its child, grandchild, etc.</p>
+
+  <p class="csscode">section p
+    <br>
+    {
+    <br>
+      &nbsp;&nbsp;background-color: lightgreen;
+    <br>
+    }
+  </p>
+
+  <section>Parent
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;-- Child PARAGRAPH of DIV</p>
+    <h3> &nbsp;&nbsp;&nbsp;&nbsp;-- This is a Child HEADING 1 of DIV</h3>
+    <h4> &nbsp;&nbsp;&nbsp;&nbsp;-- This is a Child HEADING 2 of DIV</h4>
+    <div>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Grandchild paragraph of DIV</p>
+    </div>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;-- Another child PARAGRAPH of DIV</p>
+  </section>
+  <p>PARAGRAPH outside DIV</p>
+  <hr>
+
+  <h2>Child selector (>)</h2>
+  <p>The child selector in CSS is used to select elements in a webpage that are the direct children of a specified element. In other words, it selects only those elements that are nested directly inside a specified element and not those which are nested inside a child or grandchild of an element.</p>
+
+  <p class="csscode">article > p
+    <br>
+    {
+    <br>
+      &nbsp;&nbsp;background-color: lightcoral;
+    <br>
+    }
+  </p>
+
+  <article>Parent
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;-- Child PARAGRAPH of DIV</p>
+    <h3> &nbsp;&nbsp;&nbsp;&nbsp;-- This is a Child HEADING 1 of DIV</h3>
+    <h4> &nbsp;&nbsp;&nbsp;&nbsp;-- This is a Child HEADING 2 of DIV</h4>
+    <div>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Grandchild paragraph of DIV</p>
+    </div>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;-- Another child PARAGRAPH of DIV</p>
+  </article>
+  <p>PARAGRAPH outside DIV</p>
+  <hr>
+
+  <h2>Adjacent sibling selector (+)</h2>
+  <p>The adjacent sibling selector in CSS is used to select all the immediate siblings of an element in a webpage. In other words, it selects those elements that are nested under the same parent as a specified element and also appear immediately after that element.</p>
+  
+  <p class="csscode">aside + p
+    <br>
+    {
+    <br>
+      &nbsp;&nbsp;background-color: lightgray;
+    <br>
+    }
+  </p>
+
+  <aside>Parent
+    <p>  &nbsp;&nbsp;&nbsp;&nbsp;-- Child PARAGRAPH of DIV</p>
+    <h3> &nbsp;&nbsp;&nbsp;&nbsp;-- This is a Child HEADING 1 of DIV</h3>
+    <h4> &nbsp;&nbsp;&nbsp;&nbsp;-- This is a Child HEADING 2 of DIV</h4>
+    <div>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Grandchild paragraph of DIV</p>
+    </div>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;-- Another child PARAGRAPH of DIV</p>
+  </aside>
+  <p>PARAGRAPH 1 outside DIV</p>
+  <p>PARAGRAPH 2 outside DIV</p>
+  <hr>
+
+  <h2>General sibling selector (~)</h2>
+  <p>The general sibling selector in CSS is used to select all general siblings of an element that follows that element. In other words, it selects those elements in a document that are nested under the same parent element as a specified element and is also present after that element.</p>
+
+  <p class="csscode">header ~ p
+    <br>
+    {
+    <br>
+      &nbsp;&nbsp;background-color: lightblue;
+    <br>
+    }
+  </p>
+
+
+  <header>Parent
+    <p>  &nbsp;&nbsp;&nbsp;&nbsp;-- Child PARAGRAPH of DIV</p>
+    <h3> &nbsp;&nbsp;&nbsp;&nbsp;-- This is a Child HEADING 1 of DIV</h3>
+    <h4> &nbsp;&nbsp;&nbsp;&nbsp;-- This is a Child HEADING 2 of DIV</h4>
+    <div>
+      <p> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;-- Grandchild paragraph of DIV</p>
+    </div>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;-- Another child PARAGRAPH of DIV</p>
+  </header>
+  <p>PARAGRAPH 1 outside DIV</p>
+  <p>PARAGRAPH 2 outside DIV</p>
+  <p>PARAGRAPH 3 outside DIV</p>
+
+  <!-- Add this below code after explaining all selectors and talk more about general sibling selector -->
+  <h5>This is a heading</h5>
+  <p>PARAGRAPH 4 outside DIV</p>
+  <div>
+    <p> &nbsp;&nbsp;&nbsp;&nbsp;-- CHILD PARAGRAPH 5 outside DIV</p>
+  </div>
+</body>
+</html>

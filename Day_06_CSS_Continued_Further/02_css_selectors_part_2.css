@@ -1,0 +1,24 @@
+body {
+  background-color: lavender;
+}
+
+section p {
+  background-color: lightgreen;
+}
+
+article > p {
+  background-color: lightcoral;
+}
+
+aside + p {
+  background-color: lightgray;
+}
+
+header ~ p {
+  background-color: lightblue;
+}
+
+.csscode {
+  border: 2px solid lightslategray;
+  padding: 1rem;
+}
