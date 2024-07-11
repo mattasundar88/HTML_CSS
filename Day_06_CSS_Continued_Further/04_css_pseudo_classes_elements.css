@@ -1,0 +1,55 @@
+body {
+  background-color: lightcyan;
+}
+
+button:hover {
+  background-color: lightsalmon;
+  cursor: pointer;
+}
+
+/* li:first-child {
+  color:crimson;
+}
+
+li:last-child {
+  color: olivedrab;
+} */
+
+li:nth-child(odd) {
+  color:crimson;
+}
+
+li:nth-child(even) {
+  color: olivedrab;
+}
+
+/* Only have alternate color */
+/* Select Even */
+/* li:nth-child(2n) {
+  color: darkmagenta
+} */
+
+/* Select Odd */
+/* li:nth-child(2n + 1) {
+  color: darkmagenta
+} */
+
+/* h2:first-of-type {
+  background-color: firebrick;
+}
+
+h2:last-of-type {
+  background-color: goldenrod;
+} */
+
+input:focus {
+  background-color: orange;
+}
+
+input:disabled {
+  background-color: lightgrey;
+}
+
+input:placeholder-shown {
+  background-color: chartreuse;
+}
