@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>CSS Cascade and Specificity</title>
+  <link href="08_css_cascade_and_specificity.css" rel="stylesheet" />
+</head>
+
+<body>
+  <h1>CSS Cascade and Specificity</h1>
+  <hr />
+  <h3>
+    The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS.
+  </h3>
+
+  <h3>
+    CSS stands for Cascading Style Sheets, and that first word cascading is incredibly important to understand - the way
+    that the cascade behaves is key to understanding CSS.
+  </h3>
+
+  <h2>Cascade</h2>
+  <hr />
+  <h3>
+    Stylesheets cascade - at a very simple level, this means that the origin, the cascade layer, and the order of CSS
+    rules matter.
+  </h3>
+
+  <p class="text">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore saepe a alias sed. Similique assumenda
+    omnis voluptate porro dolorem culpa hic blanditiis obcaecati voluptates adipisci quaerat tempore animi, labore
+    necessitatibus.
+  </p>
+
+  <h2>Specificity</h2>
+  <hr />
+  <h3>
+    Specificity is the algorithm that the browser uses to decide which property value is applied to an element
+  </h3>
+
+  <ul>
+    <li class="list" id="item" style="color: black;">Item 1</li>
+    <li class="list" id="item">Item 2</li>
+    <li class="list" id="item">Item 3</li>
+  </ul>
+
+  <p>
+    The specificity algorithm is basically a three-column value of three categories or weights - ID, CLASS, and TYPE -
+    corresponding to the three types of selectors. The value represents the count of selector components in each weight
+    category and is written as ID - CLASS - TYPE. The three columns are created by counting the number of selector
+    components for each selector weight category in the selectors that match the element.
+  </p>
+
+  <h3>Selector weight categories</h3>
+  <p>
+    The selector weight categories are listed here in the order of decreasing specificity:
+  </p>
+
+  <h4>ID column</h4>
+  <p>
+    Includes only ID selectors, such as #example. For each ID in a matching selector, add 1-0-0 to the weight value.
+  </p>
+
+  <h4>CLASS column</h4>
+  <p>
+    Includes class selectors, such as .myClass, attribute selectors like [type="radio"] and [lang|="fr"], and
+    pseudo-classes, such as :hover, :nth-of-type(3n), and :required. For each class, attribute selector, or pseudo-class
+    in a matching selector, add 0-1-0 to the weight value.
+  </p>
+
+  <h4>TYPE columns</h4>
+  <p>
+    Includes type selectors, such as p, h1, and td, and pseudo-elements like ::before, ::placeholder, and all other
+    selectors with double-colon notation. For each type or pseudo-element in a matching selector, add 0-0-1 to the
+    weight value.
+  </p>
+
+  <h4>No value</h4>
+  <p>
+    The universal selector (*) and the pseudo-class :where() and its parameters aren't counted when calculating the
+    weight so their value is 0-0-0, but they do match elements. These selectors do not impact the specificity weight
+    value.
+  </p>
+
+  <h4>Inline styles</h4>
+  <p>
+    Inline styles added to an element (e.g., style="font-weight: bold;") always overwrite any normal styles in author
+    stylesheets, and therefore, can be thought of as having the highest specificity. Think of inline styles as having a
+    specificity weight of 1-0-0-0.
+  </p>
+</body>
+
+</html>

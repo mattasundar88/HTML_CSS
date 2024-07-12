@@ -1,0 +1,38 @@
+body {
+  background-color: antiquewhite;
+}
+
+/* In the below example, we have two rules that could apply to the <p> element. The <p> content ends up being colored blue. */
+
+p {
+  color: orangered;
+}
+
+p {
+  color: darkblue;
+}
+
+/* Specificity is the algorithm that the browser uses to decide which property value is applied to an element.  */
+
+/* The specificity algorithm is basically a three-column value of three categories or weights - ID, CLASS, and TYPE - 0 - 0 - 0 corresponding to the three types of selectors. */
+
+/* 0-1-0 */
+.list {
+  color: magenta;
+}
+
+/* 0-3-0 */
+.list .ullist .listitem {
+  color: orange; 
+}
+
+/* 1-0-0 - WINS! */
+#item {
+  color: green;
+}
+
+/* 0-0-1 */
+li {
+  color: firebrick;
+}
+

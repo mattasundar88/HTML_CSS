@@ -7,6 +7,21 @@ button:hover {
   cursor: pointer;
 }
 
+button:active {
+  box-shadow: 0.5rem 0.5rem 0.5rem blue;;
+}
+
+/* .first {
+  font-weight: bold;
+  font-size: 1.25rem;
+} */
+
+/* article p:first-child { */
+article p:last-child {
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
 /* li:first-child {
   color:crimson;
 }
@@ -52,4 +67,58 @@ input:disabled {
 
 input:placeholder-shown {
   background-color: chartreuse;
+}
+
+
+section.hero {
+  text-decoration: underline;
+}
+
+section:not(.hero) {
+  font-weight: bold;
+}
+
+
+/* Pseudo Elements */
+/* article p span {
+  background-color: indianred;
+} */
+
+section p {
+  font-weight: normal;
+  width: 600px;
+}
+
+section p::first-line {
+  background-color: indianred;
+}
+
+section p::first-letter {
+  font-size: 4rem;
+  color: blueviolet;
+}
+
+input::placeholder {
+  color: red;
+}
+
+section p::selection {
+  color: red;
+  background-color: yellow;
+}
+
+header::before {
+  content: "Hello";
+}
+
+header::after {
+  content: "!";
+}
+
+.point li {
+  list-style-type: none;
+}
+
+.point li:before {
+  content: "> ";
 }

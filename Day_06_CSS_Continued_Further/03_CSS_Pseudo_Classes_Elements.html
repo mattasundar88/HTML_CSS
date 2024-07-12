@@ -1,19 +1,43 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>CSS Pseudo Classes and Elements</title>
-  <link rel="stylesheet" href="04_css_pseudo_classes_elements.css">
+  <link href="04_css_pseudo_classes_elements.css" rel="stylesheet" />
 </head>
 <body>
-  <h1>Pseudo Classes</h1>
-  <p>A pseudo-class in CSS is a keyword that defines the special state of an element. It is used to apply special effects on an element on performing certain actions.</p>
-  
-  <h2>Hover</h2>
+  <h1>Pseudo-Classes vs Pseudo-Elements</h1>
+  <p>
+    Pseudo itself means false, unreal, or fake. The prefix pseudo-, is used to reference classes or elements that are not "real".
+  </p>
+  <h2>What are Pseudo-Classes in CSS?</h2>
+  <p>
+    A pseudo-class is a selector that selects elements that are in a specific state, e.g. they are the first element of their type, or they are being hovered over by the mouse pointer. They tend to act as if you had applied a class to some part of your document.
+  </p>
+
+  <h3>Hover</h3>
   <button>Click Me!</button>
 
-  <h2>First and Last Child/ n<sup>th</sup> Child</h2>
+  <h3>First and Last Child</h3>
+  <!-- Avoid use of additional classes - we could use the :first-child pseudo-class selector — this will always target the first child element in the article, and we will no longer need to edit the HTML -->
+  <article>
+    <p>
+      Amaranth azuki beetroot cauliflower coriander dandelion esse gourd green j. Amaranth artichoke arugula aubergine beet beetroot bell black-eyed bok bologi bona brussels caulie chickpea coriander corn cucumber daikon dandelion desert dulse fava gourd greens gumbo. Arugula asparagus azuki bona bunya burdock carrot catsear celtuce chestnut collard corn courgette cress desert eggplant endive epazote fava garbanzo garlic grape green groundnut. Arugula asparagus azuki beetroot bologi burdock cauliflower chestnut chickpea chicory choy collard corn daikon desert earthnut endive gourd gram grape groundnut gumbo horseradish.
+    </p>
+    <!-- <p class="first">Veggies es bonus vobis, proinde vos postulo essum magis kohlrabi welsh onion daikon amaranth tatsoi tomatillo melon azuki bean garlic.</p> -->
+    <p>
+      Avocado bamboo bell carrot caulie cauliflower chard chestnut chickpea choy collard coriander cress daikon esse gram groundnut. Amaranth artichoke asparagus azuki bamboo beet bell bona brussels cauliflower celery chickpea chicory choy collard desert dulse epazote garbanzo gourd gram greens groundnut gumbo. Aubergine azuki beetroot bell bitterleaf bologi broccoli brussels carrot celery celtuce chard chickweed choy collard daikon dandelion epazote fava garbanzo greens.
+    </p>
+    <p>
+      Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+    </p>
+  </article>
+
+  <h3>
+    n
+    <sup>th</sup> Child
+  </h3>
   <ul>
     <li>Item 1</li>
     <li>Item 2</li>
@@ -24,13 +48,69 @@
     <li>Item 6</li>
   </ul>
 
-  <h2>Focus</h2>
-  <input type="text">
+  <h3>Focus</h3>
+  <input type="text" />
 
-  <h2>Disabled</h2>
-  <input type="text" disabled>
+  <h3>Disabled</h3>
+  <input disabled type="text" />
 
-  <h2>Placeholder Shown</h2>
-  <input type="text" placeholder="Enter text">
+  <h3>Placeholder Shown</h3>
+  <input placeholder="Enter text" type="text" />
+
+  <h3>:not()</h3>
+  <p>
+    The :not() CSS pseudo-class represents elements that do not match a list of selectors.
+  </p>
+  <section class="hero">
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Assumenda quidem nostrum quis nemo natus tempore soluta blanditiis porro eos tenetur commodi ipsam culpa ut maiores recusandae expedita, eaque inventore enim!
+  </section>
+  <section class="hero">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio doloremque illum illo reiciendis vitae, quam culpa quisquam debitis, odit dolor numquam nam inventore! Hic, pariatur eum? Culpa incidunt amet sapiente.
+  </section>
+  <section>
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus quibusdam sunt qui commodi perferendis eveniet soluta, blanditiis dignissimos possimus sequi? Doloribus nesciunt perspiciatis reprehenderit alias blanditiis error odio facere. Ea?
+  </section>
+
+  <h2>What are Pseudo-Elements in CSS?</h2>
+  <p>
+    Pseudo-elements behave in a similar way. However, they act as if you had added a whole new HTML element into the markup, rather than applying a class to existing elements.
+  </p>
+  <p>Pseudo-elements start with a double colon ::</p>
+
+  <h3>First Line and First Letter</h3>
+  <section>
+    <p>
+      Amaranth azuki beetroot cauliflower coriander dandelion esse gourd green j. Amaranth artichoke arugula aubergine beet beetroot bell black-eyed bok bologi bona brussels caulie chickpea coriander corn cucumber daikon dandelion desert dulse fava gourd greens gumbo. Arugula asparagus azuki bona bunya burdock carrot catsear celtuce chestnut collard corn courgette cress desert eggplant endive epazote fava garbanzo garlic grape green groundnut. Arugula asparagus azuki beetroot bologi burdock cauliflower chestnut chickpea chicory choy collard corn daikon desert earthnut endive gourd gram grape groundnut gumbo horseradish.
+    </p>
+    <p>
+      Avocado bamboo bell carrot caulie cauliflower chard chestnut chickpea choy collard coriander cress daikon esse gram groundnut. Amaranth artichoke asparagus azuki bamboo beet bell bona brussels cauliflower celery chickpea chicory choy collard desert dulse epazote garbanzo gourd gram greens groundnut gumbo. Aubergine azuki beetroot bell bitterleaf bologi broccoli brussels carrot celery celtuce chard chickweed choy collard daikon dandelion epazote fava garbanzo greens.
+    </p>
+    <p>
+      Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.Gumbo beet greens corn soko endive gumbo gourd. Parsley shallot courgette tatsoi pea sprouts fava bean collard greens dandelion okra wakame tomato. Dandelion cucumber earthnut pea peanut soko zucchini.
+    </p>
+  </section>
+
+  <h3>Generating content with ::before and ::after</h3>
+  <p>
+    There are a couple of special pseudo-elements, which are used along with the content property to insert content into your document using CSS.
+  </p>
+
+  <header>John Doe</header>
+
+  <ul class="point">
+    <li>Point 1</li>
+    <li>Point 2</li>
+    <li>Point 3</li>
+  </ul>
+
+  <h2>The Difference between Pseudo-classes and Pseudo-elements in CSS</h2>
+  <ul>
+    <li>
+      As a takeaway, remember that there is a key difference between a single and double colon. Most importantly that : refers to pseudo-classes and :: refers to pseudo-elements.
+    </li>
+    <li>
+      Pseudo-classes are used to target state. Pseudo-elements are used to target specific parts of an element.
+    </li>
+  </ul>
 </body>
 </html>
