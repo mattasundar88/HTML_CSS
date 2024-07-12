@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
@@ -9,7 +8,7 @@
 </head>
 
 <body>
-  <h1>CSS Cascade and Specificity</h1>
+  <h1 id="heading">CSS Cascade and Specificity</h1>
   <hr />
   <h3>
     The aim of this lesson is to develop your understanding of some of the most fundamental concepts of CSS.
@@ -40,6 +39,7 @@
   </h3>
 
   <ul>
+    <!-- Avoid Inline styles - Lack of reusability, Inability to use css selectors like hover, focus etc, Difficulty in code readability, hard to debug -->
     <li class="list" id="item" style="color: black;">Item 1</li>
     <li class="list" id="item">Item 2</li>
     <li class="list" id="item">Item 3</li>
@@ -83,12 +83,58 @@
     value.
   </p>
 
+  <p>
+    Combinators, such as +, >, ~, " ", and ||, may make a selector more specific in what is selected but they don't add
+    any value to the specificity weight.
+  </p>
+
   <h4>Inline styles</h4>
   <p>
     Inline styles added to an element (e.g., style="font-weight: bold;") always overwrite any normal styles in author
     stylesheets, and therefore, can be thought of as having the highest specificity. Think of inline styles as having a
     specificity weight of 1-0-0-0.
   </p>
-</body>
 
+  <h4>The !important exception</h4>
+  <p>
+    CSS declarations marked as important override any other declarations within the same cascade layer and origin.
+  </p>
+
+  <p>Does anything have precedence over important declarations? Yes, transitions. CSS transitions are a way to control the speed at which the property changes from one value to another. While transitioning from one value to another, a property will not match a specific important declaration.</p>
+  <pre>
+    a {
+      color: red !important;
+      background-color: yellow;
+      transition: all 2s linear;
+    }
+
+    a:hover {
+      color: blue !important;
+      background-color: orange !important;
+    }
+  </pre>
+  <p>
+    In this example, the color and background-color properties will transition to the hovered state over two seconds. Even though default states are normal declarations and hover states are !important declarations, the transition does happen.
+  </p>
+  <hr />
+
+  <h4>Finally wrapping the Cascade</h4>
+  <ol>
+    <li>Importance</li>
+    <li>Origin</li>
+    <li>Specificity</li>
+    <li>Position</li>
+  </ol>
+
+  <article class="special">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus dolore molestias, error a
+    voluptatum, ea repellat eveniet labore deserunt debitis illum officia accusantium quo, eum culpa quasi cupiditate
+    veritatis! Distinctio.
+  </article>
+
+  <article>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime voluptate dolore aliquam vero laborum ea, ullam
+    eveniet. Odio, eaque accusamus hic voluptatem dicta voluptatum deserunt, eum sed modi quisquam explicabo.
+  </article>
+</body>
 </html>

@@ -2,10 +2,11 @@ body {
   background-color: antiquewhite;
 }
 
+/* SHOW IN DEV TOOLS */
 /* In the below example, we have two rules that could apply to the <p> element. The <p> content ends up being colored blue. */
 
 p {
-  color: orangered;
+  color: orangered ;
 }
 
 p {
@@ -16,6 +17,7 @@ p {
 
 /* The specificity algorithm is basically a three-column value of three categories or weights - ID, CLASS, and TYPE - 0 - 0 - 0 corresponding to the three types of selectors. */
 
+/* Only the color property is conflicting */
 /* 0-1-0 */
 .list {
   color: magenta;
@@ -34,5 +36,61 @@ p {
 /* 0-0-1 */
 li {
   color: firebrick;
+  font-size: 1.25rem;
 }
 
+/* Check you knowledge */
+.myClass input[type='radio'] {
+  /* 0-2-1 */
+}
+
+input[type='radio'] {
+  /* 0-1-1 */
+}
+
+.myClass p:first-child {
+  / * 0-2-1 */
+}
+
+.myClass p::before {
+  /* 0-1-2 */
+}
+
+/* Specificity is basically to trouble shoot a problem */
+.special {
+  background-color: aqua;
+}
+
+article:nth-of-type(1) {
+  background-color: brown;
+}
+
+/* The !important flag alters the rules selecting declarations inside the cascade. */
+
+/* #heading {
+  color: magenta;
+}
+
+h1 {
+  color: olivedrab !important;
+} */
+
+/* No Important */
+
+/* Origin - User style sheet or browser */
+
+/* #heading {
+  color:  red;
+} */
+
+/* Specificity 1-0-0 0-0-1 */
+
+h1 {
+  color: purple;
+}
+
+/* Finally Cascading */
+
+h1 {
+  color: dodgerblue
+}
