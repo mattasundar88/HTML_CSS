@@ -1,5 +1,8 @@
 body {
   background-color: antiquewhite;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
 }
 
 /* SHOW IN DEV TOOLS */

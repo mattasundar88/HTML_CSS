@@ -1,0 +1,84 @@
+body {
+  background-color: azure;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family:  Helvetica, sans-serif;
+}
+
+.box1 {
+  background-color: magenta;
+  width: 20px;
+  height: 20px;
+  /* width: 20cm; */
+  /* height: 20cm; */
+  margin: 100px;
+}
+
+.container {
+  border: 1px solid black;
+  height: 800px;
+  width: 600px;
+}
+
+/* Percentage values are always relative to another quantity */
+.box2 {
+  background-color: olive;
+  width: 50%;
+  height: 50%;
+}
+
+.para {
+  font-size: 40px;
+  /* Relative to the font size of the element itself. */
+  /* Depends on the user agent. Desktop browsers (including Firefox) use a default value of roughly 1.2 */
+  line-height: 200%;
+  /* The size of the margin as a percentage, relative to the inline size width */
+  margin: 10%;
+}
+
+h1 {
+  font-size: 8rem;
+  /* 8 * 16px = 128px */
+}
+
+h2 {
+  font-size: 6rem;
+  /* 96px */
+}
+
+p {
+  font-size: 4rem;
+}
+
+li {
+  font-size: 1.5em;
+  /* Cascading EM problem in font-size */
+  /* 1.5 * 16px = 24px */
+  /* 1.5 * 24px = 36px */
+}
+
+.container2 {
+  font-size: 30px;
+}
+
+.container2 h1 {
+  font-size: 2em;
+}
+
+.container2 p {
+  font-size: 1.5em;
+}
+
+.container3 {
+  /* width: 800px; */
+}
+
+.box3 {
+  height: 40vh;
+  /* Specifying 10vh is equivalent to occupying 10% of entire visible screen height. */
+  /* percentage wouldn't work since it works off the parent width */
+  /* width: 50%; */
+  width: 50vw;
+  /* Specifying 10vw is equivalent to occupying 10% of entire visible screen width. */
+  background: orangered;
+}

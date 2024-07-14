@@ -1,5 +1,8 @@
 body {
   background-color: lavender;
+  max-width: 1200px;
+  margin: 0 auto;
+  font-family: Helvetica, sans-serif;
 }
 
 section p {
