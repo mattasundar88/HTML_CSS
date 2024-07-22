@@ -1,0 +1,53 @@
+Project 2 - Information
+--------------------------
+
+### Font-Family: Forum, serif
+### Background-Color: #f08e80
+### Button Hover - Use Color - blanchedalmond
+### Max Width should not exceed 900px
+### Use floats to create the two column layout
+### Under the Tech Blog, use background color #f4f4f4 for the cards and use color gray for the dates
+
+### Images & Text:
+--------------------------
+-- Use height and width of 2rem for instagram and twitter images
+
+--- I’m a Scientist and Speaker who is interested in the psychology of greed.
+
+My Mission
+-----------
+This is my mission. Maecenas a varius odio egestas auctor. Praesent facilisis, ex a gravida ultricies, quam sed magna placerat eros, et vehicula lectus ligula id dui. Aliquam uto cursus velit ut eros lorem ipsum ullamcorper iaculis.
+
+Specialties
+------------
+  --  Public Speaking
+  --  Data Analysis
+  --  Strategic Planning
+  --  User Interviews
+  --  Writing & Editing
+  --  Analytics & Data
+  --  Front-End DevProgramming
+
+Tech Blog
+----------
+This Is Your Brain On Helium
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, voluptate mollitia voluptates iure harum autem facere aut cum. Dolorem, molestias animi nisi esse quam quo optio! Quidem nobis inventore voluptatum.
+
+May 19, 2025
+
+----------
+
+In Search Of Intelligence
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, voluptate mollitia voluptates iure harum autem facere aut cum. Dolorem, molestias animi nisi esse quam quo optio! Quidem nobis inventore voluptatum.
+
+June 12, 2025
+
+----------
+
+Should Public Transit Be Free?
+
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, voluptate mollitia voluptates iure harum autem facere aut cum. Dolorem, molestias animi nisi esse quam quo optio! Quidem nobis inventore voluptatum.
+
+March 17, 2025
