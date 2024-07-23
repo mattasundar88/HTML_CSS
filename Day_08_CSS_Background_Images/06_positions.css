@@ -1,0 +1,54 @@
+.box {
+  background-color: rgba(0, 0, 255, .2);
+  border: 3px solid #00f;
+  width: 5rem;
+  height: 5rem;
+  display: inline-flex;
+  margin: 0 1rem;
+}
+
+#element {
+  background-color: #ff0;
+  border: 3px solid red;
+  /* position: static; */
+  position: relative;
+  /* The space given for the element in the page layout is the same as if position were static */
+  top: 2rem;
+  left: 1rem;
+  z-index: 10;
+}
+
+.para {
+  border: 1px solid blue;
+  padding: 1rem;
+  background-color: azure;
+  position: relative;
+  left: 120px;
+  z-index: 1;
+}
+
+#element2 {
+  background-color: #ff0;
+  border: 3px solid red;
+  /* position: relative; */
+  position: absolute;
+  /* The space given for the element in the page layout is the same as if position were static */
+  top: 2rem;
+  left: 1rem;
+}
+
+.container  {
+  border: 1px solid saddlebrown;
+  padding: 1rem;
+  position: relative;
+}
+
+#element3 {
+  background-color: red;
+  border: 3px solid yellow;
+  /* position: relative; */
+  position: absolute;
+  /* The space given for the element in the page layout is the same as if position were static */
+  top: 2rem;
+  left: 6rem;
+}
