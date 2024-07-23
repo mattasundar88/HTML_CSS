@@ -1,0 +1,86 @@
+.box {
+  border: 1px solid red;
+  padding: 1rem;
+  /* background-color: darkturquoise; */
+  width: 400px;
+  height: 400px;
+  /* background-image: url(images/people.jpg); */
+
+  /* https://unsplash.com/ */
+  /* background-image: url(https://images.unsplash.com/photo-1721296356400-e4846536bd11?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyOXx8fGVufDB8fHx8fA%3D%3D); */
+
+  /* background-image: url(images/peacock.png); */
+  /* Image size is small it repeats else it will show only part of image */
+
+  /* We can have both image and color if images are transparent */
+  /* background-color: aquamarine; */
+
+  /* but if image is not transparent, the background-color doesn't show up */
+
+  /* The background-repeat CSS property sets how background images are repeated. */
+  /* The default value is repeat repeat */
+  /* background-repeat: no-repeat; */
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; *
+
+  /* Comment out peacock image and use FOOD image and increase the width */
+  width: 800px;
+  /* The background-size CSS property sets the size of the element's background image. */
+  background-image: url(images/food.jpg);
+
+  /* cover tells the browser to make sure the image always covers the entire container, even if it has to stretch the image or cut a little bit off one of the edges. 
+  contain, on the other hand, says to always show the whole image, even if that leaves a little space to the sides or bottom. */
+
+  /* background-size: contain; */
+  /* background-repeat: no-repeat; */
+
+  /* background-size: cover; */
+
+  /* background-size: 50% 50%; */
+  
+
+  /* The background-position CSS property sets the initial position for each background image. */
+  /* Use background-repeat: no-repeat; */
+
+  /* background-repeat: no-repeat; */
+  /* background-position: right; */
+  /* background-position: 25px 75px; */
+
+  /* The background-clip CSS property sets whether an element's background extends underneath its border box, padding box, or content box. */
+
+  /* Update the border  */
+  border: 1rem dotted red;
+  /* background-clip: padding-box; */
+  background-clip: content-box;
+  /* background-clip: text; */
+
+  /* The background shorthand CSS property sets all background style properties at once, such as color, image, origin and size, or repeat method. */
+}
+
+.box2 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid blue;
+  padding: 1rem;
+  background: url(images/peacock.png) no-repeat center/80%;
+  /* The <bg-size> value may only be included immediately after <position>, separated with the '/' character, like this: "center/80%". */
+}
+
+/* filter
+The filter CSS property applies graphical effects like blur or color shift to an element. Filters are commonly used to adjust the rendering of images, backgrounds, and borders. */
+
+.box3, .box4 {
+  width: 400px;
+  height: 400px;
+  border: 1px solid blue;
+  padding: 1rem;
+  margin: 1rem 0;
+  background: url(images/sunset.jpg);
+}
+
+.box4 {
+  /* filter: blur(4px); */
+  /* filter: grayscale(100%); */
+  /* filter: sepia(100%); */
+  filter: contrast(175%) brightness(103%);
+}
